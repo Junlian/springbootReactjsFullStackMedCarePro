@@ -10,6 +10,7 @@ import ClinicalTools from './components/ClinicalTools';
 import ErrorBoundary from './components/ErrorBoundary';
 import EmergencyResponse from './components/EmergencyResponse';
 import PatientCommunication from './components/PatientCommunication';
+import DoctorSchedule from './components/DoctorSchedule';
 
 function App() {
   return (
@@ -86,6 +87,11 @@ function App() {
               <Route path="/communication" element={
                 <ErrorBoundary>
                   <PatientCommunication />
+                </ErrorBoundary>
+              } />
+              <Route path="/schedule" element={
+                <ErrorBoundary>
+                  <DoctorSchedule />
                 </ErrorBoundary>
               } />
               {/* Add more routes as needed */}
