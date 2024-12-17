@@ -8,6 +8,7 @@ import StatsCard from './components/StatsCard';
 import ActivityFeed from './components/ActivityFeed';
 import ClinicalTools from './components/ClinicalTools';
 import ErrorBoundary from './components/ErrorBoundary';
+import EmergencyResponse from './components/EmergencyResponse';
 
 function App() {
   return (
@@ -74,6 +75,11 @@ function App() {
               <Route path="/clinical-tools" element={
                 <ErrorBoundary>
                   <ClinicalTools />
+                </ErrorBoundary>
+              } />
+              <Route path="/emergency" element={
+                <ErrorBoundary>
+                  <EmergencyResponse />
                 </ErrorBoundary>
               } />
               {/* Add more routes as needed */}
