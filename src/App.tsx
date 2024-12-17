@@ -11,6 +11,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import EmergencyResponse from './components/EmergencyResponse';
 import PatientCommunication from './components/PatientCommunication';
 import DoctorSchedule from './components/DoctorSchedule';
+import MedicalRecords from './components/MedicalRecords';
 
 function App() {
   return (
@@ -92,6 +93,11 @@ function App() {
               <Route path="/schedule" element={
                 <ErrorBoundary>
                   <DoctorSchedule />
+                </ErrorBoundary>
+              } />
+              <Route path="/records" element={
+                <ErrorBoundary>
+                  <MedicalRecords />
                 </ErrorBoundary>
               } />
               {/* Add more routes as needed */}
