@@ -12,6 +12,7 @@ import EmergencyResponse from './components/EmergencyResponse';
 import PatientCommunication from './components/PatientCommunication';
 import DoctorSchedule from './components/DoctorSchedule';
 import MedicalRecords from './components/MedicalRecords';
+import AppointmentManagement from './components/AppointmentManagement';
 
 function App() {
   return (
@@ -98,6 +99,11 @@ function App() {
               <Route path="/records" element={
                 <ErrorBoundary>
                   <MedicalRecords />
+                </ErrorBoundary>
+              } />
+              <Route path="/appointments" element={
+                <ErrorBoundary>
+                  <AppointmentManagement />
                 </ErrorBoundary>
               } />
               {/* Add more routes as needed */}
